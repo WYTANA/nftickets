@@ -78,7 +78,7 @@ export default function Home() {
   return (
     <div className="flex justify-center bg-charcoal-gray w-screen h-full">
       <div style={{ width: 800, height: 950 }}>
-        <div className="md:grid md:grid-cols-2 grid grid-cols-3 gap-4 pt-8">
+        <div className="grid grid-cols-3 gap-4 pt-8">
           {nfts.map((nft, i) => (
             <div key={i} className="border p-4 shadow rounded bg-black-russian">
               <img
