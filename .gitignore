@@ -18,6 +18,7 @@
 # misc
 .DS_Store
 *.pem
+notes.txt 
 
 # debug
 npm-debug.log*
@@ -26,7 +27,18 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
+.env
 .env*.local
 
 # vercel
 .vercel
+
+node_modules
+.env
+coverage
+coverage.json
+typechain
+
+#Hardhat files
+cache
+artifacts
