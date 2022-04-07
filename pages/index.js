@@ -82,7 +82,7 @@ export default function Home() {
   if (loaded === "loaded" && !nfts.length)
     return (
       <h1 className="p-20 text-4xl text-text-1">
-        Sorry! We’re Sold Out of NFTickets!
+        Sorry! We{"'"}re Sold Out of NFTickets!
       </h1>
     )
 
