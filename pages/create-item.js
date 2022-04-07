@@ -4,7 +4,7 @@ import { create as ipfsHttpClient } from "ipfs-http-client"
 import { useRouter } from "next/router"
 import { signOut } from "firebase/auth"
 import { auth } from "../utils/firebase"
-import Image from "next/image"
+// import Image from "next/image"
 import Web3Modal from "web3modal"
 import web3 from "web3"
 
@@ -119,9 +119,10 @@ export default function Home() {
         />
         <input type="file" name="NFT" className="my-4" onChange={onChange} />
         {fileUrl && (
-          <Image
+          <img
             className="rounded mt-4"
-            width="350"
+            width={350}
+            // height={350}
             src={fileUrl}
             alt="image"
           />
