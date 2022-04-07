@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  webpack5: false,
-  // images: {
-  //   domains: ["ipfs.infura.io/"],
-  // },
+  webpack5: true,
 }
 
 module.exports = nextConfig
