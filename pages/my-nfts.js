@@ -3,6 +3,8 @@ import { useEffect, useState } from "react"
 import web3 from "web3"
 import axios from "axios"
 import Web3Modal from "web3modal"
+import Link from "next/link"
+import Image from "next/image"
 
 import { nftmarketaddress, nftaddress } from "../config"
 
@@ -56,9 +58,9 @@ export default function Home() {
     return (
       <h1 className="p-20 text-4xl text-text-1">
         You have no NFTickets! Purchase them{" "}
-        <a href="/" style={{ color: "blue" }}>
-          here
-        </a>
+        <Link href="/" style={{ color: "blue" }}>
+          <a>here</a>
+        </Link>
         !
       </h1>
     )
@@ -79,7 +81,11 @@ export default function Home() {
         <div className="grid grid-cols-3 gap-4 pt-8">
           {nfts.map((nft, i) => (
             <div key={i} className="border p-4 shadow rounded bg-black-russian">
-              <img src={nft.image} className="rounded h-30 w-64" />
+              <Image
+                src={nft.image}
+                className="rounded h-30 w-64"
+                alt="image"
+              />
               <p className="text-2xl my-4 font-bold text-text-1">
                 Price paid: {nft.price}
               </p>
