@@ -58,8 +58,8 @@ export default function Home() {
     return (
       <h1 className="p-20 text-4xl text-text-1">
         You have no NFTickets! Purchase them{" "}
-        <Link href="/" style={{ color: "blue" }}>
-          <a>here</a>
+        <Link href="/" style={{}}>
+          <a className="underline text-blue-400 hover:text-blue-600">here</a>
         </Link>
         !
       </h1>
